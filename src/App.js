@@ -1,19 +1,20 @@
 import logo from './logo.svg';
 import './App.css';
+import Homepage from './pages/Home/Homepage';
+import Contactuspage from './pages/Contactuspage/contactus';
+import { BrowserRouter,Route, Routes } from 'react-router-dom';
+import NavBar from './Components/NavBar/NavBar';
 
 function App() { //jsx
   return (
     <div className="App">
-      <SampleComponent title="My name is Amar" home="& I'm 21 years old"/>
+      <BrowserRouter>
+        <Routes>
+          <Route element={<Homepage/>} path='/'/>
+          <Route element={<Contactuspage/>} path='/contact'/>
+        </Routes>
+      </BrowserRouter>
     </div>
   );
-}
-
-const SampleComponent = (props) => {
-  return (
-    <div>
-      <h1>{props.title} {props.home}</h1>
-    </div>
-  );
-}
+  }
 export default App;

@@ -1,0 +1,28 @@
+.main-content {
+    background-color: lightblue;
+    width: 100%;
+    height: 100%;
+}
+
+.topbar-nav {
+    margin: 0;
+    background-color: gray;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    list-style-type: none;
+    padding-left: 0;
+    overflow: hidden;
+}
+
+.topbar-nav>li>a {
+    text-decoration: none;
+    background-color: gray;
+    color: white;
+    float: right;
+    display: block;
+    padding: 25px 25px;
+}
+
+.topbar-nav>li>a:hover {
+    background-color: lightblue;
+    color: black;
+}
